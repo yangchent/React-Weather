@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer= ()=> {
     return <div className="footer">
-                <h3>Footer</h3>
+                <h4>By - Yangchen.  Date: 12th August 2021</h4>
             </div>
 
 }

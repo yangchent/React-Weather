@@ -1,10 +1,11 @@
-.App {
+body{
   font-family:cursive;
+  
 }
 
 
 .App-header {
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(68,105,148,0.7010154403558299) 85%);
+  background-color:wheat;
   min-height: 10vh;
   display: flex;
   flex-direction: inline;
@@ -25,10 +26,11 @@ h1{
 }
 .container{
   min-height: 37rem;
+  text-align: center ;
 }
 
 .footer{
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(68,105,148,0.7010154403558299) 85%);
+  background-color: wheat;
   min-height: 10vh;
   display: flex;
   flex-direction: inline;
