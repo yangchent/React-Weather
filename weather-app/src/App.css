@@ -1,42 +1,75 @@
 body{
-  font-family:cursive;
-  
+  font-family:monospace;
+  background-image: url('./image/sky.jpeg');
+  max-width: 70em;
+  margin: auto;
 }
-
-
 .App-header {
-  background-color:wheat;
+  background-color:rgba(67, 37, 199, 0.438);
   min-height: 10vh;
   display: flex;
   flex-direction: inline;
   align-items: center;
   justify-content: right;
   font-size: calc(10px + 2vmin);
+  padding-right: 2em;
   }
 
 .App-link {
-  color: #230d7a;
+  color: #dadadb;
   text-decoration: none;
   padding-left: 2em;
 }
 h1{
- font-family: cursive;
- color: #230d7a;
+ font-family: monospace;
+ color: #fafafd;
  text-align: center ;
 }
 .container{
-  min-height: 37rem;
+  background-color: rgba(248, 246, 246, 0.39);
+  min-height: 25rem;
   text-align: center ;
+  min-height: 70vh;
+}
+.mainDiv{
+  padding: 2em;
+}
+form{
+  padding: .5em;
+  display:inline-table;
+  max-width: 6em;
+}
+.button{
+  padding:0.5em;
+  background-color: rgb(128, 110, 207);
+  border-radius: 1em;
+  color: white;
+}
+.card{
+  padding: 1em;
+  color: black;
+  display: flex;
+  flex-direction: inline;
+}
+.cardContainer{
+  align-self:center;
+  background-color: rgba(187, 187, 187, 0.63);
+  width: 20em;
+  min-height: 20em;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px rgba(146, 145, 145, 0.5);
+  text-align: center;
+  padding: 2em;
+  margin: 1em;
 }
 
 .footer{
-  background-color: wheat;
+  position:relative;
   min-height: 10vh;
-  display: flex;
-  flex-direction: inline;
-  align-items: flex-end;
-  justify-content: right;
+  left: 0;
+  bottom: 0;  
+  background-color: rgba(67, 37, 199, 0.438);
   font-size: calc(10px + 2vmin);
-  color: #230d7a;
+  color: #fbfafc;
   padding-left: 2em;
 }

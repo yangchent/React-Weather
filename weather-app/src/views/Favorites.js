@@ -6,7 +6,8 @@ const Favorites= ()=> {
 
     return <div>
         <div className="container">
-            <h1>Favorites</h1>
+            <h1>Favorite Cities</h1>
+            
             <CityCard />     
         </div>
             </div>

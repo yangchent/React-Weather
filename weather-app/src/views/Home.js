@@ -16,24 +16,30 @@ const Home= ()=> {
         }
         const setFavorite = () => {
             if(cityList){
-              if ( cityList.length <3){
+              if ( cityList.length <= 2){
                 setCityList([...cityList,cityTemp])
                 console.log("setFavorite")
               } 
+              else { 
+                  return null;
+              }
             }
         }
         console.log(cityList)
        return (
                 <div className="container">
-                    <h1>Type a city name to see the weather</h1>
+                    <div className="mainDiv">
+                        <h1>Type a city name to see the weather</h1>
                     <form >
-                        <input type="text" value={stateName} onChange={(e) => setStateName(e.target.value)}/>
-                        <input type="submit" value="Submit" onClick={handleClick}/>
+                        <input type="text" value={stateName} onChange={(e) => setStateName(e.target.value)} />
+                        {'\n'}
+                        <input type="submit" value="Submit" onClick={handleClick} className= "button"/>
                     </form>
 
                         <h2>City Name: {cityTemp.name}</h2>
-                        <p>Temperature: {cityTemp.main? cityTemp.main.temp : null}</p>
-                        <button onClick={setFavorite}>Add 2 Fav</button>
+                        <h3>Temperature: {cityTemp.main? cityTemp.main.temp : null}</h3>
+                        <button onClick={setFavorite} className="button">Click to add to favourite</button>
+                    </div>
                 </div> 
                
         
